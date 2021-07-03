@@ -15,14 +15,12 @@ class MainActivity : AppCompatActivity() {
         val button = findViewById<Button>(R.id.button)
         val text = findViewById<TextView>(R.id.myText)
 
-        var buttonText = "Toggle"
-
         button.setOnClickListener {
             if (text.visibility == View.VISIBLE){
-                text.visibility = View.INVISIBLE;
+                text.visibility = View.INVISIBLE
             }
             else{
-                text.visibility = View.VISIBLE;
+                text.visibility = View.VISIBLE
             }
         }
     }
